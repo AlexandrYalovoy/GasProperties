@@ -4,7 +4,9 @@
 
 #ifndef GASPROPERTIES_GAS_COMPONENT_H
 #define GASPROPERTIES_GAS_COMPONENT_H
+
 #include "string"
+#include "iostream"
 
 class Gas_component {
 private:
@@ -38,7 +40,9 @@ public:
     // Деструктор
     ~Gas_component();
 
-    //
+    // Метод печати информации
+
+    void print_comp_info() const;
 
     // блок сеттеров
     void set_name_ru(std::string _name_ru);

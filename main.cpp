@@ -4,16 +4,14 @@
 
 
 int main() {
-    // Инициализация экземпляра класса хранилища
 
-    Gas_comp_array array_base_gas_component;
-
-    // Блок инициализации компонентов
 
     // Метан
     Gas_component methane("Метан", "Methane");
-    array_base_gas_component.component_add_in_array(&methane);
+    array_gas_component.push_back(&methane);
+    methane.set_molar_mass(16.043);
+    methane.print_comp_info();
 
-    std::cout << "Hello, World!" << std::endl;
+    
     return 0;
 }
