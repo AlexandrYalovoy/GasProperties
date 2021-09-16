@@ -12,6 +12,6 @@ int main() {
     methane.set_molar_mass(16.043);
     methane.print_comp_info();
 
-    
+
     return 0;
 }
