@@ -59,7 +59,7 @@ int main() {
     array_gas_component.push_back(&methylbutane_2);
     methylbutane_2.set_molar_mass(72.150);
 
-    // 2-Метилбутан
+    // 2,2-Диметилпропан
     Gas_component dimethylpropane_2_2("2,2-Диметилпропан", "2,2-Dimethylpropane");
     array_gas_component.push_back(&dimethylpropane_2_2);
     dimethylpropane_2_2.set_molar_mass(72.150);
@@ -199,7 +199,7 @@ int main() {
     array_gas_component.push_back(&benzol);
     benzol.set_molar_mass(78.114);
 
-    // Бензол
+    // Толуол
     Gas_component toluol("Толуол", "Toluol");
     array_gas_component.push_back(&toluol);
     toluol.set_molar_mass(92.141);
@@ -317,7 +317,7 @@ int main() {
     // Воздух
     Gas_component air("Воздух", "Air");
     array_gas_component.push_back(&air);
-    air.set_molar_mass(131.29);
+    air.set_molar_mass(28.9626);
 
 
 
