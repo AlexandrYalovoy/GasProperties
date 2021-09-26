@@ -9,20 +9,15 @@ int main() {
     // Метан
     Gas_component methane("Метан", "Methane");
     array_gas_component.push_back(&methane);
-
     methane.set_molar_mass(16.043);
     methane.set_20_z_factor(0.9981);
     methane.set_20_sqrt_b(0.0436);
-
     methane.set_molar_heat_burning_20_higher(891.09);
     methane.set_molar_heat_burning_20_lower(802.65);
-
     methane.set_mass_heat_burning_20_higher(55.545);
     methane.set_mass_heat_burning_20_lower(50.032);
-
     methane.set_volume_heat_burning_20_higher(37.044);
     methane.set_volume_heat_burning_20_lower(33.367);
-
     methane.set_critical_temperature(190.555);
     methane.set_critical_pressure(4598.8);
     methane.set_coefficient_acentricity(0.0115);
@@ -41,6 +36,9 @@ int main() {
     ethan.set_mass_heat_burning_20_lower(47.51);
     ethan.set_volume_heat_burning_20_higher(64.91);
     ethan.set_volume_heat_burning_20_lower(59.39);
+    ethan.set_critical_temperature(305.83);
+    ethan.set_critical_pressure(4880.0);
+    ethan.set_coefficient_acentricity(0.0908);
 
     // Пропан
     Gas_component propane("Пропан", "Propane");
@@ -54,6 +52,9 @@ int main() {
     propane.set_mass_heat_burning_20_lower(46.34);
     propane.set_volume_heat_burning_20_higher(92.29);
     propane.set_volume_heat_burning_20_lower(84.94);
+    propane.set_critical_temperature(369.82);
+    propane.set_critical_pressure(4250.0);
+    propane.set_coefficient_acentricity(0.1454);
 
     // н-Бутан
     Gas_component n_butane("н-Бутан", "n-Butane");
@@ -67,6 +68,9 @@ int main() {
     n_butane.set_mass_heat_burning_20_lower(45.72);
     n_butane.set_volume_heat_burning_20_higher(119.66);
     n_butane.set_volume_heat_burning_20_lower(110.47);
+    n_butane.set_critical_temperature(425.14);
+    n_butane.set_critical_pressure(3784.0);
+    n_butane.set_coefficient_acentricity(0.1928);
 
     // 2-Метилпропан
     Gas_component methylpropane_2("2-Метилпропан", "2-Methylpropane");
@@ -80,6 +84,9 @@ int main() {
     methylpropane_2.set_mass_heat_burning_20_lower(45.56);
     methylpropane_2.set_volume_heat_burning_20_higher(119.28);
     methylpropane_2.set_volume_heat_burning_20_lower(110.09);
+    methylpropane_2.set_critical_temperature(408.13);
+    methylpropane_2.set_critical_pressure(3648.0);
+    methylpropane_2.set_coefficient_acentricity(0.1756);
 
     // н-Пентан
     Gas_component n_pentane("н-Пентан", "n-Pentane");
@@ -93,6 +100,9 @@ int main() {
     n_pentane.set_mass_heat_burning_20_lower(45.35);
     n_pentane.set_volume_heat_burning_20_higher(147.04);
     n_pentane.set_volume_heat_burning_20_lower(136.01);
+    n_pentane.set_critical_temperature(469.69);
+    n_pentane.set_critical_pressure(3364.0);
+    n_pentane.set_coefficient_acentricity(0.2510);
 
     // 2-Метилбутан
     Gas_component methylbutane_2("2-Метилбутан", "2-Methylbutane");
@@ -106,6 +116,9 @@ int main() {
     methylbutane_2.set_mass_heat_burning_20_lower(45.25);
     methylbutane_2.set_volume_heat_burning_20_higher(146.76);
     methylbutane_2.set_volume_heat_burning_20_lower(135.72);
+    methylbutane_2.set_critical_temperature(460.39);
+    methylbutane_2.set_critical_pressure(3381.0);
+    methylbutane_2.set_coefficient_acentricity(0.2273);
 
     // 2,2-Диметилпропан
     Gas_component dimethylpropane_2_2("2,2-Диметилпропан", "2,2-Dimethylpropane");
@@ -119,6 +132,9 @@ int main() {
     dimethylpropane_2_2.set_mass_heat_burning_20_lower(45.05);
     dimethylpropane_2_2.set_volume_heat_burning_20_higher(146.16);
     dimethylpropane_2_2.set_volume_heat_burning_20_lower(135.13);
+    dimethylpropane_2_2.set_critical_temperature(433.75);
+    dimethylpropane_2_2.set_critical_pressure(3199.0);
+    dimethylpropane_2_2.set_coefficient_acentricity(0.1970);
 
     // н-Гексан
     Gas_component n_hexane("н-Гексан", "n-Hexane");
@@ -132,6 +148,9 @@ int main() {
     n_hexane.set_mass_heat_burning_20_lower(45.10);
     n_hexane.set_volume_heat_burning_20_higher(174.46);
     n_hexane.set_volume_heat_burning_20_lower(161.59);
+    n_hexane.set_critical_temperature(506.4);
+    n_hexane.set_critical_pressure(3030.0);
+    n_hexane.set_coefficient_acentricity(0.2957);
 
     // 2-Метилпентан
     Gas_component methylpentane_2("2-Метилпентан", "2-Methylpentane");
@@ -145,6 +164,9 @@ int main() {
     methylpentane_2.set_mass_heat_burning_20_lower(45.02);
     methylpentane_2.set_volume_heat_burning_20_higher(174.14);
     methylpentane_2.set_volume_heat_burning_20_lower(161.27);
+    methylpentane_2.set_critical_temperature(497.5);
+    methylpentane_2.set_critical_pressure(3010.0);
+    methylpentane_2.set_coefficient_acentricity(0.2791);
 
     // 3-Метилпентан
     Gas_component methylpentane_3("3-Метилпентан", "3-Methylpentane");
@@ -158,6 +180,9 @@ int main() {
     methylpentane_3.set_mass_heat_burning_20_lower(45.05);
     methylpentane_3.set_volume_heat_burning_20_higher(174.25);
     methylpentane_3.set_volume_heat_burning_20_lower(161.38);
+    methylpentane_3.set_critical_temperature(504.4);
+    methylpentane_3.set_critical_pressure(3120.0);
+    methylpentane_3.set_coefficient_acentricity(0.2750);
 
     // 2,2-Диметилбутан
     Gas_component dimethylbutane_2_2("2,2-Диметилбутан", "2,2-Dimethylbutane");
@@ -171,6 +196,9 @@ int main() {
     dimethylbutane_2_2.set_mass_heat_burning_20_lower(44.90);
     dimethylbutane_2_2.set_volume_heat_burning_20_higher(173.73);
     dimethylbutane_2_2.set_volume_heat_burning_20_lower(160.86);
+    dimethylbutane_2_2.set_critical_temperature(488.7);
+    dimethylbutane_2_2.set_critical_pressure(3080.0);
+    dimethylbutane_2_2.set_coefficient_acentricity(0.2310);
 
     // 2,3-Диметилбутан
     Gas_component dimethylbutane_2_3("2,3-Диметилбутан", "2,3-Dimethylbutane");
@@ -184,6 +212,9 @@ int main() {
     dimethylbutane_2_3.set_mass_heat_burning_20_lower(44.99);
     dimethylbutane_2_3.set_volume_heat_burning_20_higher(174.05);
     dimethylbutane_2_3.set_volume_heat_burning_20_lower(161.19);
+    dimethylbutane_2_3.set_critical_temperature(499.9);
+    dimethylbutane_2_3.set_critical_pressure(3130.0);
+    dimethylbutane_2_3.set_coefficient_acentricity(0.2473);
 
     // н-Гептан
     Gas_component n_heptane("н-Гептан", "n-Heptane");
@@ -197,6 +228,9 @@ int main() {
     n_heptane.set_mass_heat_burning_20_lower(44.92);
     n_heptane.set_volume_heat_burning_20_higher(201.84);
     n_heptane.set_volume_heat_burning_20_lower(187.13);
+    n_heptane.set_critical_temperature(539.2);
+    n_heptane.set_critical_pressure(2740.0);
+    n_heptane.set_coefficient_acentricity(0.3506);
 
     // н-Октан
     Gas_component n_octane("н-Октан", "n-Octane");
@@ -210,6 +244,9 @@ int main() {
     n_octane.set_mass_heat_burning_20_lower(44.79);
     n_octane.set_volume_heat_burning_20_higher(229.22);
     n_octane.set_volume_heat_burning_20_lower(212.67);
+    n_octane.set_critical_temperature(568.4);
+    n_octane.set_critical_pressure(2490.0);
+    n_octane.set_coefficient_acentricity(0.3942);
 
     // н-Нонан
     Gas_component n_nonan("н-Нонан", "n-Nonan");
@@ -223,6 +260,9 @@ int main() {
     n_nonan.set_mass_heat_burning_20_lower(44.69);
     n_nonan.set_volume_heat_burning_20_higher(256.64);
     n_nonan.set_volume_heat_burning_20_lower(238.25);
+    n_nonan.set_critical_temperature(594.4);
+    n_nonan.set_critical_pressure(2280.0);
+    n_nonan.set_coefficient_acentricity(0.4437);
 
     // н-Декан
     Gas_component n_dean("н-Декан", "n-Dean");
@@ -236,6 +276,9 @@ int main() {
     n_dean.set_mass_heat_burning_20_lower(44.60);
     n_dean.set_volume_heat_burning_20_higher(284.03);
     n_dean.set_volume_heat_burning_20_lower(263.80);
+    n_dean.set_critical_temperature(617.8);
+    n_dean.set_critical_pressure(2090.0);
+    n_dean.set_coefficient_acentricity(0.4902);
 
     // Этилен
     Gas_component ethylene("Этилен", "Ethylene");
@@ -249,6 +292,9 @@ int main() {
     ethylene.set_mass_heat_burning_20_lower(47.17);
     ethylene.set_volume_heat_burning_20_higher(58.68);
     ethylene.set_volume_heat_burning_20_lower(55.01);
+    ethylene.set_critical_temperature(282.35);
+    ethylene.set_critical_pressure(5042.0);
+    ethylene.set_coefficient_acentricity(0.0856);
 
     // Пропилен
     Gas_component propylene("Пропилен", "Propylene");
@@ -262,6 +308,9 @@ int main() {
     propylene.set_mass_heat_burning_20_lower(45.77);
     propylene.set_volume_heat_burning_20_higher(85.58);
     propylene.set_volume_heat_burning_20_lower(80.07);
+    propylene.set_critical_temperature(364.85);
+    propylene.set_critical_pressure(4601.0);
+    propylene.set_coefficient_acentricity(0.1477);
 
     // 1-Бутен
     Gas_component butene_1("1-Бутен", "1-Butene");
@@ -275,6 +324,9 @@ int main() {
     butene_1.set_mass_heat_burning_20_lower(45.29);
     butene_1.set_volume_heat_burning_20_higher(112.98);
     butene_1.set_volume_heat_burning_20_lower(105.63);
+    butene_1.set_critical_temperature(419.53);
+    butene_1.set_critical_pressure(4023.0);
+    butene_1.set_coefficient_acentricity(0.1874);
 
     // цис-2-Бутен
     Gas_component cis_2_butene("цис-2-Бутен", "cis-2-Butene");
@@ -288,6 +340,9 @@ int main() {
     cis_2_butene.set_mass_heat_burning_20_lower(45.16);
     cis_2_butene.set_volume_heat_burning_20_higher(112.70);
     cis_2_butene.set_volume_heat_burning_20_lower(105.34);
+    cis_2_butene.set_critical_temperature(435.58);
+    cis_2_butene.set_critical_pressure(4220.0);
+    cis_2_butene.set_coefficient_acentricity(0.2044);
 
     // транс-2-Бутен
     Gas_component trans_2_buten("транс-2-Бутен", "trans-2-Buten");
@@ -301,6 +356,9 @@ int main() {
     trans_2_buten.set_mass_heat_burning_20_lower(45.10);
     trans_2_buten.set_volume_heat_burning_20_higher(112.55);
     trans_2_buten.set_volume_heat_burning_20_lower(105.19);
+    trans_2_buten.set_critical_temperature(428.63);
+    trans_2_buten.set_critical_pressure(4050.0);
+    trans_2_buten.set_coefficient_acentricity(0.2138);
 
     // 2-Метилпропен
     Gas_component methylpropene_2("2-Метилпропен", "2-Methylpropane");
@@ -314,6 +372,9 @@ int main() {
     methylpropene_2.set_mass_heat_burning_20_lower(44.99);
     methylpropene_2.set_volume_heat_burning_20_higher(112.29);
     methylpropene_2.set_volume_heat_burning_20_lower(104.93);
+    methylpropene_2.set_critical_temperature(417.90);
+    methylpropene_2.set_critical_pressure(4000.0);
+    methylpropene_2.set_coefficient_acentricity(0.1898);
 
     // 1-Пентен
     Gas_component penten_1("1-Пентен", "1-Penten");
@@ -327,6 +388,9 @@ int main() {
     penten_1.set_mass_heat_burning_20_lower(44.99);
     penten_1.set_volume_heat_burning_20_higher(140.37);
     penten_1.set_volume_heat_burning_20_lower(131.18);
+    penten_1.set_critical_temperature(464.78);
+    penten_1.set_critical_pressure(3526.0);
+    penten_1.set_coefficient_acentricity(0.2450);
 
     // Пропадиен
     Gas_component propadiene("Пропадиен", "Propadiene");
@@ -340,6 +404,9 @@ int main() {
     propadiene.set_mass_heat_burning_20_lower(46.30);
     propadiene.set_volume_heat_burning_20_higher(80.79);
     propadiene.set_volume_heat_burning_20_lower(77.12);
+    propadiene.set_critical_temperature(393.0);
+    propadiene.set_critical_pressure(5470.0);
+    propadiene.set_coefficient_acentricity(0.149);
 
     // 1,2-Бутадиен
     Gas_component butadiene_1_2("1,2-Бутадиен", "1,2-Butadiene");
@@ -353,6 +420,9 @@ int main() {
     butadiene_1_2.set_mass_heat_burning_20_lower(45.51);
     butadiene_1_2.set_volume_heat_burning_20_higher(107.85);
     butadiene_1_2.set_volume_heat_burning_20_lower(102.34);
+    butadiene_1_2.set_critical_temperature(443.7);
+    butadiene_1_2.set_critical_pressure(4500.0);
+    butadiene_1_2.set_coefficient_acentricity(0.3394);
 
     // 1,3-Бутадиен
     Gas_component butadiene_1_3("1,3-Бутадиен", "1,3-Butadiene");
@@ -366,6 +436,9 @@ int main() {
     butadiene_1_3.set_mass_heat_burning_20_lower(44.53);
     butadiene_1_3.set_volume_heat_burning_20_higher(105.65);
     butadiene_1_3.set_volume_heat_burning_20_lower(100.13);
+    butadiene_1_3.set_critical_temperature(425.0);
+    butadiene_1_3.set_critical_pressure(4330.0);
+    butadiene_1_3.set_coefficient_acentricity(0.1814);
 
     // Ацетилен
     Gas_component acethylene("Ацетилен", "Acetylene");
@@ -379,6 +452,9 @@ int main() {
     acethylene.set_mass_heat_burning_20_lower(48.28);
     acethylene.set_volume_heat_burning_20_higher(54.09);
     acethylene.set_volume_heat_burning_20_lower(52.25);
+    acethylene.set_critical_temperature(308.33);
+    acethylene.set_critical_pressure(6139.0);
+    acethylene.set_coefficient_acentricity(0.1841);
 
     // Циклопентан
     Gas_component cyclopentane("Циклопентан", "Cyclopentane");
@@ -392,6 +468,9 @@ int main() {
     cyclopentane.set_mass_heat_burning_20_lower(44.20);
     cyclopentane.set_volume_heat_burning_20_higher(138.05);
     cyclopentane.set_volume_heat_burning_20_lower(128.86);
+    cyclopentane.set_critical_temperature(511.61);
+    cyclopentane.set_critical_pressure(4502.0);
+    cyclopentane.set_coefficient_acentricity(0.1923);
 
     // Метилциклопентан
     Gas_component methylcyclopentane("Метилциклопентан", "Methylcyclopentane");
@@ -405,6 +484,9 @@ int main() {
     methylcyclopentane.set_mass_heat_burning_20_lower(44.03);
     methylcyclopentane.set_volume_heat_burning_20_higher(165.08);
     methylcyclopentane.set_volume_heat_burning_20_lower(154.04);
+    methylcyclopentane.set_critical_temperature(532.73);
+    methylcyclopentane.set_critical_pressure(3784.0);
+    methylcyclopentane.set_coefficient_acentricity(0.2395);
 
     // Этилциклопентан
     Gas_component ethylcyclopentan("Этилциклопентан", "Ethylcyclopentan");
@@ -418,6 +500,9 @@ int main() {
     ethylcyclopentan.set_mass_heat_burning_20_lower(44.00);
     ethylcyclopentan.set_volume_heat_burning_20_higher(192.48);
     ethylcyclopentan.set_volume_heat_burning_20_lower(179.61);
+    ethylcyclopentan.set_critical_temperature(569.46);
+    ethylcyclopentan.set_critical_pressure(3397.0);
+    ethylcyclopentan.set_coefficient_acentricity(0.2826);
 
     // Циклогексан
     Gas_component cyclohexane("Циклогексан", "Cyclohexane");
@@ -431,6 +516,9 @@ int main() {
     cyclohexane.set_mass_heat_burning_20_lower(43.83);
     cyclohexane.set_volume_heat_burning_20_higher(164.39);
     cyclohexane.set_volume_heat_burning_20_lower(153.36);
+    cyclohexane.set_critical_temperature(553.5);
+    cyclohexane.set_critical_pressure(4074.0);
+    cyclohexane.set_coefficient_acentricity(0.2144);
 
     // Метилциклогексан
     Gas_component methylcyclohexane("Метилциклогексан", "Methylcyclohexane");
@@ -444,6 +532,9 @@ int main() {
     methylcyclohexane.set_mass_heat_burning_20_lower(43.72);
     methylcyclohexane.set_volume_heat_burning_20_higher(191.32);
     methylcyclohexane.set_volume_heat_burning_20_lower(178.45);
+    methylcyclohexane.set_critical_temperature(572.12);
+    methylcyclohexane.set_critical_pressure(3471.0);
+    methylcyclohexane.set_coefficient_acentricity(0.2333);
 
     // Этилциклогексан
     Gas_component ethylcyclohexane("Этилциклогексан", "Ethylcyclohexane");
@@ -457,6 +548,9 @@ int main() {
     ethylcyclohexane.set_mass_heat_burning_20_lower(43.77);
     ethylcyclohexane.set_volume_heat_burning_20_higher(218.87);
     ethylcyclohexane.set_volume_heat_burning_20_lower(204.16);
+    ethylcyclohexane.set_critical_temperature(609.0);
+    ethylcyclohexane.set_critical_pressure(3040.0);
+    ethylcyclohexane.set_coefficient_acentricity(0.2426);
 
     // Бензол
     Gas_component benzol("Бензол", "Benzol");
@@ -470,6 +564,9 @@ int main() {
     benzol.set_mass_heat_burning_20_lower(40.58);
     benzol.set_volume_heat_burning_20_higher(137.27);
     benzol.set_volume_heat_burning_20_lower(131.76);
+    benzol.set_critical_temperature(562.16);
+    benzol.set_critical_pressure(4898.0);
+    benzol.set_coefficient_acentricity(0.2100);
 
     // Толуол
     Gas_component toluol("Толуол", "Toluol");
@@ -483,6 +580,9 @@ int main() {
     toluol.set_mass_heat_burning_20_lower(40.94);
     toluol.set_volume_heat_burning_20_higher(164.16);
     toluol.set_volume_heat_burning_20_lower(156.80);
+    toluol.set_critical_temperature(591.80);
+    toluol.set_critical_pressure(4106.0);
+    toluol.set_coefficient_acentricity(0.2566);
 
     // Этилбензол
     Gas_component ethylbenzol("Этилбензол", "Ethylbenzol");
@@ -496,6 +596,9 @@ int main() {
     ethylbenzol.set_mass_heat_burning_20_lower(41.32);
     ethylbenzol.set_volume_heat_burning_20_higher(191.57);
     ethylbenzol.set_volume_heat_burning_20_lower(182.38);
+    ethylbenzol.set_critical_temperature(617.20);
+    ethylbenzol.set_critical_pressure(3606.0);
+    ethylbenzol.set_coefficient_acentricity(0.3011);
 
     // о-Ксилол
     Gas_component xylol_o("о-Ксилол", "o-Xylol");
@@ -509,6 +612,9 @@ int main() {
     xylol_o.set_mass_heat_burning_20_lower(41.22);
     xylol_o.set_volume_heat_burning_20_higher(191.12);
     xylol_o.set_volume_heat_burning_20_lower(181.93);
+    xylol_o.set_critical_temperature(630.33);
+    xylol_o.set_critical_pressure(3734.0);
+    xylol_o.set_coefficient_acentricity(0.3136);
 
     // Метанол
     Gas_component methanol("Метанол", "Methanol");
@@ -522,6 +628,9 @@ int main() {
     methanol.set_mass_heat_burning_20_lower(21.10);
     methanol.set_volume_heat_burning_20_higher(31.78);
     methanol.set_volume_heat_burning_20_lower(28.11);
+    methanol.set_critical_temperature(512.64);
+    methanol.set_critical_pressure(8092.0);
+    methanol.set_coefficient_acentricity(0.556);
 
     // Метантиол
     Gas_component methanethiol("Метантиол", "Methanethiol");
@@ -535,6 +644,9 @@ int main() {
     methanethiol.set_mass_heat_burning_20_lower(23.93);
     methanethiol.set_volume_heat_burning_20_higher(51.54);
     methanethiol.set_volume_heat_burning_20_lower(47.86);
+    methanethiol.set_critical_temperature(470.0);
+    methanethiol.set_critical_pressure(7230.0);
+    methanethiol.set_coefficient_acentricity(0.153);
 
     // Водород
     Gas_component hydrogen("Водород", "Hydrogen");
@@ -548,6 +660,9 @@ int main() {
     hydrogen.set_mass_heat_burning_20_lower(119.93);
     hydrogen.set_volume_heat_burning_20_higher(11.889);
     hydrogen.set_volume_heat_burning_20_lower(10.050);
+    hydrogen.set_critical_temperature(33.2);
+    hydrogen.set_critical_pressure(1297.0);
+    hydrogen.set_coefficient_acentricity(-0.218);
 
     // Вода
     Gas_component water("Вода", "Water");
@@ -561,6 +676,9 @@ int main() {
     water.set_mass_heat_burning_20_lower(0.0);
     water.set_volume_heat_burning_20_higher(1.84);
     water.set_volume_heat_burning_20_lower(0.0);
+    water.set_critical_temperature(647.14);
+    water.set_critical_pressure(22064.0);
+    water.set_coefficient_acentricity(0.328);
 
     // Сульфид водорода
     Gas_component hydrogen_sulfide("Сульфид водорода", "Hydrogen sulfide");
@@ -574,6 +692,9 @@ int main() {
     hydrogen_sulfide.set_mass_heat_burning_20_lower(15.20);
     hydrogen_sulfide.set_volume_heat_burning_20_higher(23.37);
     hydrogen_sulfide.set_volume_heat_burning_20_lower(21.53);
+    hydrogen_sulfide.set_critical_temperature(373.2);
+    hydrogen_sulfide.set_critical_pressure(8940.0);
+    hydrogen_sulfide.set_coefficient_acentricity(0.109);
 
     // Аммиак
     Gas_component ammonia("Аммиак", "Ammonia");
@@ -587,6 +708,9 @@ int main() {
     ammonia.set_mass_heat_burning_20_lower(18.60);
     ammonia.set_volume_heat_burning_20_higher(15.93);
     ammonia.set_volume_heat_burning_20_lower(13.17);
+    ammonia.set_critical_temperature(405.5);
+    ammonia.set_critical_pressure(11350.0);
+    ammonia.set_coefficient_acentricity(0.250);
 
     // Цианид водорода
     Gas_component hydrogen_cyanide("Цианид водорода", "Hydrogen cyanide");
@@ -600,6 +724,9 @@ int main() {
     hydrogen_cyanide.set_mass_heat_burning_20_lower(24.03);
     hydrogen_cyanide.set_volume_heat_burning_20_higher(27.92);
     hydrogen_cyanide.set_volume_heat_burning_20_lower(27.00);
+    hydrogen_cyanide.set_critical_temperature(456.7);
+    hydrogen_cyanide.set_critical_pressure(5390.0);
+    hydrogen_cyanide.set_coefficient_acentricity(0.388);
 
     // Монооксид углерода
     Gas_component carbon_monoxide("Монооксид углерода", "Carbon monoxide");
@@ -613,6 +740,9 @@ int main() {
     carbon_monoxide.set_mass_heat_burning_20_lower(10.10);
     carbon_monoxide.set_volume_heat_burning_20_higher(11.76);
     carbon_monoxide.set_volume_heat_burning_20_lower(11.76);
+    carbon_monoxide.set_critical_temperature(132.85);
+    carbon_monoxide.set_critical_pressure(3494.0);
+    carbon_monoxide.set_coefficient_acentricity(0.053);
 
     // Карбонил сульфид
     Gas_component carbonyl_sulfide("Карбонил сульфид", "Carbonyl sulfide");
@@ -626,6 +756,9 @@ int main() {
     carbonyl_sulfide.set_mass_heat_burning_20_lower(9.12);
     carbonyl_sulfide.set_volume_heat_burning_20_higher(22.79);
     carbonyl_sulfide.set_volume_heat_burning_20_lower(22.79);
+    carbonyl_sulfide.set_critical_temperature(378.8);
+    carbonyl_sulfide.set_critical_pressure(6349.0);
+    carbonyl_sulfide.set_coefficient_acentricity(0.096);
 
     // Дисульфид углерода
     Gas_component carbon_disulfide("Дисульфид углерода", "Carbon disulfide");
@@ -639,6 +772,9 @@ int main() {
     carbon_disulfide.set_mass_heat_burning_20_lower(14.50);
     carbon_disulfide.set_volume_heat_burning_20_higher(45.91);
     carbon_disulfide.set_volume_heat_burning_20_lower(45.91);
+    carbon_disulfide.set_critical_temperature(552.0);
+    carbon_disulfide.set_critical_pressure(7900.0);
+    carbon_disulfide.set_coefficient_acentricity(0.109);
 
     // Гелий
     Gas_component helium("Гелий", "Helium");
@@ -652,6 +788,9 @@ int main() {
     helium.set_mass_heat_burning_20_lower(0.0);
     helium.set_volume_heat_burning_20_higher(0.0);
     helium.set_volume_heat_burning_20_lower(0.0);
+    helium.set_critical_temperature(5.19);
+    helium.set_critical_pressure(227.0);
+    helium.set_coefficient_acentricity(-0.365);
 
     // Неон
     Gas_component neon("Неон", "Neon");
@@ -665,6 +804,9 @@ int main() {
     neon.set_mass_heat_burning_20_lower(0.0);
     neon.set_volume_heat_burning_20_higher(0.0);
     neon.set_volume_heat_burning_20_lower(0.0);
+    neon.set_critical_temperature(44.40);
+    neon.set_critical_pressure(2760.0);
+    neon.set_coefficient_acentricity(-0.029);
 
     // Аргон
     Gas_component argon("Аргон", "Argon");
@@ -678,6 +820,9 @@ int main() {
     argon.set_mass_heat_burning_20_lower(0.0);
     argon.set_volume_heat_burning_20_higher(0.0);
     argon.set_volume_heat_burning_20_lower(0.0);
+    argon.set_critical_temperature(150.65);
+    argon.set_critical_pressure(4866.0);
+    argon.set_coefficient_acentricity(0.001);
 
 
     // Азот
@@ -692,6 +837,9 @@ int main() {
     nitrogen.set_mass_heat_burning_20_lower(0.0);
     nitrogen.set_volume_heat_burning_20_higher(0.0);
     nitrogen.set_volume_heat_burning_20_lower(0.0);
+    nitrogen.set_critical_temperature(126.2);
+    nitrogen.set_critical_pressure(3390.0);
+    nitrogen.set_coefficient_acentricity(0.039);
 
     // Кислород
     Gas_component oxygen("Кислород", "Oxygen");
@@ -705,6 +853,9 @@ int main() {
     oxygen.set_mass_heat_burning_20_lower(0.0);
     oxygen.set_volume_heat_burning_20_higher(0.0);
     oxygen.set_volume_heat_burning_20_lower(0.0);
+    oxygen.set_critical_temperature(154.58);
+    oxygen.set_critical_pressure(5043.0);
+    oxygen.set_coefficient_acentricity(0.025);
 
     // Диоксид углерода
     Gas_component carbon_dioxide("Диоксид углерода", "Carbon dioxide");
@@ -718,6 +869,9 @@ int main() {
     carbon_dioxide.set_mass_heat_burning_20_lower(0.0);
     carbon_dioxide.set_volume_heat_burning_20_higher(0.0);
     carbon_dioxide.set_volume_heat_burning_20_lower(0.0);
+    carbon_dioxide.set_critical_temperature(304.20);
+    carbon_dioxide.set_critical_pressure(7386.0);
+    carbon_dioxide.set_coefficient_acentricity(0.239);
 
     // Диоксид серы
     Gas_component sulfur_dioxide("Диоксид серы", "Sulfur dioxide");
@@ -731,6 +885,9 @@ int main() {
     sulfur_dioxide.set_mass_heat_burning_20_lower(0.0);
     sulfur_dioxide.set_volume_heat_burning_20_higher(0.0);
     sulfur_dioxide.set_volume_heat_burning_20_lower(0.0);
+    sulfur_dioxide.set_critical_temperature(430.8);
+    sulfur_dioxide.set_critical_pressure(7884.0);
+    sulfur_dioxide.set_coefficient_acentricity(0.256);
 
     // Монооксид диазота
     Gas_component nitrogen_monoxide("Монооксид диазота", "Nitrogen monoxide");
@@ -744,6 +901,9 @@ int main() {
     nitrogen_monoxide.set_mass_heat_burning_20_lower(0.0);
     nitrogen_monoxide.set_volume_heat_burning_20_higher(0.0);
     nitrogen_monoxide.set_volume_heat_burning_20_lower(0.0);
+    nitrogen_monoxide.set_critical_temperature(126.2); // по азоту
+    nitrogen_monoxide.set_critical_pressure(3390.0); // по азоту
+    nitrogen_monoxide.set_coefficient_acentricity(0.039); // по азоту
 
     // Криптон
     Gas_component krypton("Криптон", "Krypton");
@@ -757,6 +917,9 @@ int main() {
     krypton.set_mass_heat_burning_20_lower(0.0);
     krypton.set_volume_heat_burning_20_higher(0.0);
     krypton.set_volume_heat_burning_20_lower(0.0);
+    krypton.set_critical_temperature(126.2); // по азоту
+    krypton.set_critical_pressure(3390.0); // по азоту
+    krypton.set_coefficient_acentricity(0.039); // по азоту
 
     // Ксенон
     Gas_component xenon("Ксенон", "Xenon");
@@ -770,6 +933,9 @@ int main() {
     xenon.set_mass_heat_burning_20_lower(0.0);
     xenon.set_volume_heat_burning_20_higher(0.0);
     xenon.set_volume_heat_burning_20_lower(0.0);
+    xenon.set_critical_temperature(126.2); // по азоту
+    xenon.set_critical_pressure(3390.0); // по азоту
+    xenon.set_coefficient_acentricity(0.039); // по азоту
 
     // Воздух
     Gas_component air("Воздух", "Air");
@@ -783,6 +949,9 @@ int main() {
     air.set_mass_heat_burning_20_lower(0.0);
     air.set_volume_heat_burning_20_higher(0.0);
     air.set_volume_heat_burning_20_lower(0.0);
+    air.set_critical_temperature(126.2); // по азоту
+    air.set_critical_pressure(3390.0); // по азоту
+    air.set_coefficient_acentricity(0.039); // по азоту
 
 
 
