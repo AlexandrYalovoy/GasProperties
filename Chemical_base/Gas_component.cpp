@@ -12,8 +12,7 @@ Gas_component::Gas_component(std::string _name_ru, std::string _name_en) {
 Gas_component::~Gas_component() = default;
 
 // Метод печати информации
-
-void Gas_component::print_comp_info() const{
+void Gas_component::print_comp_info() const {
     std::cout << "Name - " << get_name_en() << std::endl;
     std::cout << "Molar_fraction - " << get_molar_fraction_component() << std::endl;
     std::cout << "Molar_mas - " << get_molar_mass() << std::endl;

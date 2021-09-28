@@ -47,6 +47,7 @@ public:
 
     // блок сеттеров
     void set_name_ru(std::string _name_ru);
+
     void set_name_en(std::string _name_en);
 
     void set_molar_fraction_component(double _molar_fraction_component);
@@ -54,15 +55,19 @@ public:
     void set_molar_mass(double _molar_mass);
 
     void set_20_z_factor(double _20_z_factor);
+
     void set_20_sqrt_b(double _20_sqrt_b);
 
     void set_molar_heat_burning_20_higher(double _molar_heat_burning_20_higher);
+
     void set_molar_heat_burning_20_lower(double _molar_heat_burning_20_lower);
 
     void set_mass_heat_burning_20_higher(double _mass_heat_burning_20_higher);
+
     void set_mass_heat_burning_20_lower(double _mass_heat_burning_20_lower);
 
     void set_volume_heat_burning_20_higher(double _volume_heat_burning_20_higher);
+
     void set_volume_heat_burning_20_lower(double _volume_heat_burning_20_lower);
 
     void set_critical_temperature(double _critical_temperature);
@@ -73,6 +78,7 @@ public:
 
     // блок геттеров
     [[nodiscard]] std::string get_name_ru() const;
+
     [[nodiscard]] std::string get_name_en() const;
 
     [[nodiscard]] double get_molar_fraction_component() const;
@@ -80,15 +86,19 @@ public:
     [[nodiscard]] double get_molar_mass() const;
 
     [[nodiscard]] double get_20_z_factor() const;
+
     [[nodiscard]] double get_20_sqrt_b() const;
 
     [[nodiscard]] double get_molar_heat_burning_20_higher() const;
+
     [[nodiscard]] double get_molar_heat_burning_20_lower() const;
 
     [[nodiscard]] double get_mass_heat_burning_20_higher() const;
+
     [[nodiscard]] double get_mass_heat_burning_20_lower() const;
 
     [[nodiscard]] double get_volume_heat_burning_20_higher() const;
+
     [[nodiscard]] double get_volume_heat_burning_20_lower() const;
 
     [[nodiscard]] double get_critical_temperature() const;
