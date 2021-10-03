@@ -15,7 +15,7 @@ void Factor_z::test_arr() {
 
 void Factor_z::calc_flow_z_factor() {
 
-    /// найдем средне арифметическое смеси произведения мольной доли итого компонента на коф. суммирования
+    // найдем средне арифметическое смеси произведения мольной доли итого компонента на коф. суммирования
     double average_mol_frac_sqrt_b{};
     double spam_mol_frac{};
     double spam_20_sqrt_b{};
@@ -25,7 +25,7 @@ void Factor_z::calc_flow_z_factor() {
         average_mol_frac_sqrt_b += spam_mol_frac * spam_20_sqrt_b;
     }
 
-    /// Найдем коэффициент сжимаемости
+    // Найдем коэффициент сжимаемости
     double result_z_factor{};
     result_z_factor = 1.0 - pow(average_mol_frac_sqrt_b, 2.0);
     double rounding_accuracy = 10000.0;
