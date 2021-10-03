@@ -22,7 +22,7 @@ void Factor_z::calc_flow_z_factor() {
     for (Gas_component &item: m_flow) {
         spam_mol_frac = item.get_molar_fraction_component();
         spam_20_sqrt_b = item.get_20_sqrt_b();
-        average_mol_frac_sqrt_b +=  spam_mol_frac * spam_20_sqrt_b;
+        average_mol_frac_sqrt_b += spam_mol_frac * spam_20_sqrt_b;
     }
 
     /// Найдем коэффициент сжимаемости
@@ -33,7 +33,7 @@ void Factor_z::calc_flow_z_factor() {
     m_flow_z_factor = result_z_factor;
 }
 
-double Factor_z::get_flow_z_factor() {
+double Factor_z::get_flow_z_factor() const {
     return m_flow_z_factor;
 }
 

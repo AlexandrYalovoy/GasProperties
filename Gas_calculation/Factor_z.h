@@ -4,6 +4,7 @@
 
 #ifndef GASPROPERTIES_FACTOR_Z_H
 #define GASPROPERTIES_FACTOR_Z_H
+
 #include "vector"
 #include "../Chemical_base/Gas_component.h"
 #include "iostream"
@@ -15,11 +16,13 @@ private:
     double m_flow_z_factor{};
 
     void calc_flow_z_factor();
+
 public:
     explicit Factor_z(std::vector<Gas_component> &_flow);
+
     ~Factor_z();
 
-    double get_flow_z_factor();
+    [[nodiscard]] double get_flow_z_factor() const;
 
     void test_arr();
 };
