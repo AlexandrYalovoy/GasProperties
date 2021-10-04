@@ -2,6 +2,7 @@
 #include "Chemical_base/Gas_comp_arr.h"
 #include "Gas_calculation/Factor_z.h"
 #include "Gas_calculation/Molar_mass.h"
+#include "Gas_calculation/Molar_heat_burning_20.h"
 #include "string"
 
 
@@ -36,9 +37,12 @@ int main() {
 
     Factor_z test_z(array_gas_labatugan);
     Molar_mass test_m_mass(array_gas_labatugan);
+    Molar_heat_burning_20 test_molar_heat_burning_20(array_gas_labatugan);
 
     std::cout << test_z.get_flow_z_factor() << std::endl;
     std::cout << test_m_mass.get_molar_mass() << std::endl;
+    std::cout << test_molar_heat_burning_20.get_molar_heat_burning_20_higher() << std::endl;
+    std::cout << test_molar_heat_burning_20.get_molar_heat_burning_20_lower() << std::endl;
 
     return 0;
 }
