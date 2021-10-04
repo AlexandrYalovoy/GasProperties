@@ -22,6 +22,7 @@ private:
 
     // Метод расчета молярной теплоты сгорания 20/атм
     void calc_molar_heat_burning_20();
+
 public:
     // Присваивает ссылку в m_flow и сразу вызывает расчет при создании
     explicit Molar_heat_burning_20(std::vector<Gas_component> &_flow);

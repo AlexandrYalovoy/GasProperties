@@ -18,11 +18,12 @@ double Molar_heat_burning_20::get_molar_heat_burning_20_lower() const {
 }
 
 void Molar_heat_burning_20::calc_molar_heat_burning_20() {
-    // высшая молярная теплота сгорания
+    // высшая молярная теплота сгорания смеси
     double molar_heat_burning_20_higher{};
-    // низшая молярная теплота сгорания
+    // низшая молярная теплота сгорания смеси
     double molar_heat_burning_20_lower{};
 
+    // Данные по компоненту
     double spam_mol_frac{};
     double spam_mol_heat_burning_20_higher{};
     double spam_mol_heat_burning_20_lower{};
@@ -37,6 +38,7 @@ void Molar_heat_burning_20::calc_molar_heat_burning_20() {
 
     // Точность округления
     double rounding_accuracy = 100.0;
+    // Округление
     molar_heat_burning_20_higher = round(molar_heat_burning_20_higher * rounding_accuracy) / rounding_accuracy;
     molar_heat_burning_20_lower = round(molar_heat_burning_20_lower * rounding_accuracy) / rounding_accuracy;
 
