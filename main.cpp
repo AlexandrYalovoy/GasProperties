@@ -4,6 +4,7 @@
 #include "Gas_calculation/Molar_mass.h"
 #include "Gas_calculation/Molar_heat_burning_20.h"
 #include "Gas_calculation/Mass_heat_burning_20.h"
+#include "Gas_calculation/Volume_heat_burning_20.h"
 #include "string"
 
 
@@ -40,6 +41,7 @@ int main() {
     Molar_mass test_m_mass(array_gas_labatugan);
     Molar_heat_burning_20 test_molar_heat_burning_20(array_gas_labatugan);
     Mass_heat_burning_20 test_mass_heat_burning_20(array_gas_labatugan, test_m_mass);
+    Volume_heat_burning_20 test_volume_heat_burning_20(array_gas_labatugan, test_z);
 
     std::cout << test_z.get_flow_z_factor() << std::endl;
     std::cout << test_m_mass.get_molar_mass() << std::endl;
@@ -47,6 +49,8 @@ int main() {
     std::cout << test_molar_heat_burning_20.get_molar_heat_burning_20_lower() << std::endl;
     std::cout << test_mass_heat_burning_20.get_mass_heat_burning_20_higher() << std::endl;
     std::cout << test_mass_heat_burning_20.get_mass_heat_burning_20_lower() << std::endl;
+    std::cout << test_volume_heat_burning_20.get_volume_heat_burning_20_higher() << std::endl;
+    std::cout << test_volume_heat_burning_20.get_volume_heat_burning_20_lower() << std::endl;
 
     return 0;
 }
