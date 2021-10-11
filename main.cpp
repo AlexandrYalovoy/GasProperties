@@ -6,6 +6,7 @@
 #include "Gas_calculation/Mass_heat_burning_20.h"
 #include "Gas_calculation/Volume_heat_burning_20.h"
 #include "Gas_calculation/Density.h"
+#include "Gas_calculation/Wobbe_number.h"
 #include "string"
 
 
@@ -44,6 +45,9 @@ int main() {
     Mass_heat_burning_20 test_mass_heat_burning_20(array_gas_labatugan, test_m_mass);
     Volume_heat_burning_20 test_volume_heat_burning_20(array_gas_labatugan, test_z);
     Density test_density(test_m_mass, test_z.get_flow_z_factor());
+    Wobbe_number test_wobbe(test_volume_heat_burning_20.get_volume_heat_burning_20_higher(),
+                            test_volume_heat_burning_20.get_volume_heat_burning_20_lower(),
+                            test_density.get_flow_del_air_20());
 
 
     std::cout << "flow_z_factor - " << test_z.get_flow_z_factor() << std::endl;
@@ -62,6 +66,10 @@ int main() {
               << std::endl;
     std::cout << "flow_density_20 - " << test_density.get_flow_density_20() << std::endl;
     std::cout << "flow_del_air_20 - " << test_density.get_flow_del_air_20() << std::endl;
+
+    std::cout << "wobbe_number_higher - " << test_wobbe.get_wobbe_number_higher() << std::endl;
+    std::cout << "wobbe_number_lower - " << test_wobbe.get_wobbe_number_lower() << std::endl;
+
 
     return 0;
 }
