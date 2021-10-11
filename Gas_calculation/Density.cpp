@@ -4,8 +4,8 @@
 
 #include "Density.h"
 
-Density::Density(Molar_mass &_molar_mass, double _z_factor) {
-    m_molar_mass_flow = _molar_mass.get_molar_mass();
+Density::Density(double _molar_mass, double _z_factor) {
+    m_molar_mass_flow = _molar_mass;
     m_z_factor = _z_factor;
     calc_standard_density();
 }
@@ -14,8 +14,8 @@ double Density::get_flow_density_20() const {
     return m_flow_density_20;
 }
 
-double Density::get_flow_del_air_20() const {
-    return m_flow_del_air_20;
+double Density::get_flow_density_del_air_20() const {
+    return m_flow_density_del_air_20;
 }
 
 void Density::calc_standard_density() {
@@ -40,7 +40,7 @@ void Density::calc_standard_density() {
     spam_flow_del_air_20 = round(spam_flow_del_air_20 * rounding_accuracy) / rounding_accuracy;
 
     m_flow_density_20 = spam_flow_density_20;
-    m_flow_del_air_20 = spam_flow_del_air_20;
+    m_flow_density_del_air_20 = spam_flow_del_air_20;
 
 }
 

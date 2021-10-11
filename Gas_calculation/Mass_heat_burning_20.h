@@ -7,7 +7,6 @@
 
 #include "vector"
 #include "../Chemical_base/Gas_component.h"
-#include "Molar_mass.h"
 #include "iostream"
 #include <cmath>
 
@@ -28,7 +27,7 @@ private:
 
 public:
     // Присваивает ссылку в m_flow и сразу вызывает расчет при создании
-    explicit Mass_heat_burning_20(std::vector<Gas_component> &_flow, Molar_mass &_class_mol_mass);
+    explicit Mass_heat_burning_20(std::vector<Gas_component> &_flow, double _molar_mass);
 
     ~Mass_heat_burning_20();
 

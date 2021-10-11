@@ -16,17 +16,19 @@ private:
     double m_z_factor{};
 
     // Плотности в стандартных условиях кг*м-3
+    // Хранит плотность в стандартных условиях кг*м-3
     double m_flow_density_20{};
-    double m_flow_del_air_20{};
+    // Хранит плотность относительную
+    double m_flow_density_del_air_20{};
 
     // Метод расчета плотности в стандартных условиях + относит
     void calc_standard_density();
 public:
-    explicit Density(Molar_mass &_molar_mass, double _z_factor);
+    explicit Density(double _molar_mass, double _z_factor);
     ~Density();
 
     [[nodiscard]] double get_flow_density_20() const;
-    [[nodiscard]] double get_flow_del_air_20() const;
+    [[nodiscard]] double get_flow_density_del_air_20() const;
 
 };
 

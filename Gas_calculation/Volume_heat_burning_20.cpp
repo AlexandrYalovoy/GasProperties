@@ -5,9 +5,9 @@
 #include "Volume_heat_burning_20.h"
 
 
-Volume_heat_burning_20::Volume_heat_burning_20(std::vector<Gas_component> &_flow, Factor_z &_z_factor) {
+Volume_heat_burning_20::Volume_heat_burning_20(std::vector<Gas_component> &_flow, double _z_factor) {
     m_flow = _flow;
-    m_z_factor = _z_factor.get_flow_z_factor();
+    m_z_factor = _z_factor;
     calc_volume_heat_burning_20();
 }
 

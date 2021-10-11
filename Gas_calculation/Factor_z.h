@@ -12,7 +12,9 @@
 
 class Factor_z {
 private:
+    // Хранит ссылку на вектор потока
     std::vector<Gas_component> m_flow;
+    // Хранит коэффициент сжимаемости
     double m_flow_z_factor{};
 
     void calc_flow_z_factor();

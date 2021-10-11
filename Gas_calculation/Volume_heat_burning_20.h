@@ -30,7 +30,7 @@ private:
 
 public:
     // Присваивает ссылку в m_flow и сразу вызывает расчет при создании
-    explicit Volume_heat_burning_20(std::vector<Gas_component> &_flow, Factor_z &_z_factor);
+    explicit Volume_heat_burning_20(std::vector<Gas_component> &_flow, double _z_factor);
 
     ~Volume_heat_burning_20();
 

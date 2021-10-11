@@ -5,9 +5,9 @@
 #include "Mass_heat_burning_20.h"
 
 
-Mass_heat_burning_20::Mass_heat_burning_20(std::vector<Gas_component> &_flow, Molar_mass &_class_mol_mass) {
+Mass_heat_burning_20::Mass_heat_burning_20(std::vector<Gas_component> &_flow, double _molar_mass) {
     m_flow = _flow;
-    m_molar_mass = _class_mol_mass.get_molar_mass();
+    m_molar_mass = _molar_mass;
     calc_mass_heat_burning_20();
 }
 
