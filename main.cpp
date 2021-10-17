@@ -2,9 +2,13 @@
 #include "Chemical_base/Gas_comp_arr.h"
 #include "Gas_calculation/Gas_calculation.h"
 #include "string"
+#include "GUI/Main_window.h"
+#include <QApplication>
 
 
-int main() {
+int main(int argc, char *argv[]) {
+    QApplication a(argc, argv);
+
     Gas_comp_arr standard_comp_arr;
 
     std::vector<Gas_component> array_gas_labatugan;
@@ -36,6 +40,12 @@ int main() {
     Gas_calculation test(array_gas_labatugan);
     test.result_calc_print();
 
+    M_W::Main_window test_window;
 
-    return 0;
+    test_window.show();
+
+
+
+
+    return QApplication::exec();
 }
