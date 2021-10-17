@@ -4,6 +4,8 @@
 
 #ifndef GASPROPERTIES_GAS_CONST_H
 #define GASPROPERTIES_GAS_CONST_H
+#pragma once
+#include "../Chemical_base/Gas_comp_arr.h"
 
 // Универсальная газовая постоянная Дж*моль-1 * К-1
 double const universal_gas_constant_R = 8.314510;

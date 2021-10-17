@@ -37,7 +37,9 @@ add_executable(GasProperties
         Gas_calculation/Wobbe_number.h
         Gas_calculation/Gas_calculation.cpp
         Gas_calculation/Gas_calculation.h
-        GUI/Main_window.cpp GUI/Main_window.h GUI/Main_window.ui)
+        GUI/Main_window.cpp
+        GUI/Main_window.h
+        GUI/Main_window.ui)
 
 target_link_libraries(GasProperties
         Qt::Core

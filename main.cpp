@@ -4,16 +4,18 @@
 #include "string"
 #include "GUI/Main_window.h"
 #include <QApplication>
+#include "Chemical_base/Gas_const.h"
 
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
-    Gas_comp_arr standard_comp_arr;
+    Gas_comp_arr standard_comp_arr_class;
+    std::vector<Gas_component> standard_comp_arr = standard_comp_arr_class.get_arr();
 
     std::vector<Gas_component> array_gas_labatugan;
 
-    array_gas_labatugan = standard_comp_arr.get_arr();
+    array_gas_labatugan = standard_comp_arr_class.get_arr();
     for (Gas_component &item: array_gas_labatugan) {
         std::string spam_name{};
         spam_name = item.get_name_ru();
@@ -41,7 +43,7 @@ int main(int argc, char *argv[]) {
     test.result_calc_print();
 
     M_W::Main_window test_window;
-
+    test_window.add_item_cbox_n(standard_comp_arr);
     test_window.show();
 
 

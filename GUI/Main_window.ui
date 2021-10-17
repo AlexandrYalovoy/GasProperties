@@ -1,22 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-    <author/>
-    <comment/>
-    <exportmacro/>
-    <class>M_W::Main_window</class>
-    <widget class="QWidget" name="M_W::Main_window">
-        <property name="geometry">
-            <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>400</width>
-                <height>300</height>
-            </rect>
-        </property>
-        <property name="windowTitle">
-            <string>Main_window</string>
-        </property>
-    </widget>
-    <pixmapfunction/>
-    <connections/>
+ <class>M_W::Main_window</class>
+ <widget class="QWidget" name="M_W::Main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main_window</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>251</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QFormLayout" name="companent_list">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_1"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QComboBox" name="item_cbox_1"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QComboBox" name="item_cbox_2"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_2"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QComboBox" name="item_cbox_3"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_4"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_3"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_5"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_6"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_7"/>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_8"/>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_9"/>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLineEdit" name="item_mol_frac_10"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QComboBox" name="item_cbox_4"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QComboBox" name="item_cbox_5"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QComboBox" name="item_cbox_6"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QComboBox" name="item_cbox_7"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QComboBox" name="item_cbox_8"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QComboBox" name="item_cbox_9"/>
+      </item>
+      <item row="9" column="0">
+       <widget class="QComboBox" name="item_cbox_10"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
 </ui>
