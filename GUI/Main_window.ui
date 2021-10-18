@@ -6,106 +6,245 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>718</width>
-    <height>505</height>
+    <width>723</width>
+    <height>427</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Main_window</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>251</width>
-     <height>331</height>
+     <x>30</x>
+     <y>30</y>
+     <width>642</width>
+     <height>358</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <layout class="QFormLayout" name="companent_list">
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_1"/>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QFormLayout" name="companent_list">
+        <item row="0" column="0">
+         <widget class="QComboBox" name="item_cbox_1"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_1"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QComboBox" name="item_cbox_2"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_2"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QComboBox" name="item_cbox_3"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_3"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QComboBox" name="item_cbox_4"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_4"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QComboBox" name="item_cbox_5"/>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_5"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QComboBox" name="item_cbox_6"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_6"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QComboBox" name="item_cbox_7"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_7"/>
+        </item>
+        <item row="7" column="0">
+         <widget class="QComboBox" name="item_cbox_8"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_8"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QComboBox" name="item_cbox_9"/>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_9"/>
+        </item>
+        <item row="9" column="0">
+         <widget class="QComboBox" name="item_cbox_10"/>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLineEdit" name="item_mol_frac_10"/>
+        </item>
+       </layout>
       </item>
-      <item row="0" column="0">
-       <widget class="QComboBox" name="item_cbox_1"/>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
       </item>
-      <item row="1" column="0">
-       <widget class="QComboBox" name="item_cbox_2"/>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_2"/>
-      </item>
-      <item row="2" column="0">
-       <widget class="QComboBox" name="item_cbox_3"/>
-      </item>
-      <item row="3" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_4"/>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_3"/>
-      </item>
-      <item row="4" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_5"/>
-      </item>
-      <item row="5" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_6"/>
-      </item>
-      <item row="6" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_7"/>
-      </item>
-      <item row="7" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_8"/>
-      </item>
-      <item row="8" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_9"/>
-      </item>
-      <item row="9" column="1">
-       <widget class="QLineEdit" name="item_mol_frac_10"/>
-      </item>
-      <item row="3" column="0">
-       <widget class="QComboBox" name="item_cbox_4"/>
-      </item>
-      <item row="4" column="0">
-       <widget class="QComboBox" name="item_cbox_5"/>
-      </item>
-      <item row="5" column="0">
-       <widget class="QComboBox" name="item_cbox_6"/>
-      </item>
-      <item row="6" column="0">
-       <widget class="QComboBox" name="item_cbox_7"/>
-      </item>
-      <item row="7" column="0">
-       <widget class="QComboBox" name="item_cbox_8"/>
-      </item>
-      <item row="8" column="0">
-       <widget class="QComboBox" name="item_cbox_9"/>
-      </item>
-      <item row="9" column="0">
-       <widget class="QComboBox" name="item_cbox_10"/>
+      <item>
+       <widget class="QPushButton" name="calc_button">
+        <property name="text">
+         <string>Выполнить расчет</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
     <item>
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="molar_mass"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Плотность, кг/м3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="flow_density_20"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Относительная плотность</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="flow_del_air_20"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Коэффициент сжимаемости</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="flow_z_factor"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Молярная теплота сгорания высшая, КДж*моль-1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="molar_heat_burning_20_higher"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Молярная теплота сгорания низшая, КДж*моль-1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="molar_heat_burning_20_lower"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Массовая телота сгорания высшая, МДж*кг-1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="mass_heat_burning_20_higher"/>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Массовая теплота сгорания низшая, МДж*кг-1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="mass_heat_burning_20_lower"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Объёмная теплота сгорания высшая, МДж*м-3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="volume_heat_burning_20_higher"/>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Объёмная теплота сгорания высшая, МДж*м-3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLineEdit" name="volume_heat_burning_20_lower"/>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Число Воббе высшее, МДж*м-3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLineEdit" name="wobbe_number_higher"/>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Число Воббе низщее, МДж*м-3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLineEdit" name="wobbe_number_lower"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Молярная масса, кг*кмоль-1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>* Параметры приведены в стандартных условиях. (t =20С и Р = 0,1 МПа)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>

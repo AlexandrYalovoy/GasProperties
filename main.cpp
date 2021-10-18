@@ -42,9 +42,11 @@ int main(int argc, char *argv[]) {
     Gas_calculation test(array_gas_labatugan);
     test.result_calc_print();
 
-    M_W::Main_window test_window;
-    test_window.add_item_cbox_n(standard_comp_arr);
+    M_W::Main_window test_window(standard_comp_arr);
+    test_window.add_item_cbox_n();
     test_window.show();
+    std::cout << std::endl;
+    test_window.calculation();
 
 
 
