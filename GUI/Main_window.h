@@ -36,6 +36,7 @@ namespace M_W {
     private:
 
         std::vector<Gas_component> m_array;
+        std::vector<Gas_component> link_array;
         Ui::Main_window *ui;
 
         // функция пишет имя во все комбобоксы

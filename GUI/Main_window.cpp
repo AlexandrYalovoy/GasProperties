@@ -11,7 +11,8 @@ namespace M_W {
     Main_window::Main_window(std::vector<Gas_component> &_array, QWidget *parent) :
             QWidget(parent), ui(new Ui::Main_window) {
         ui->setupUi(this);
-        m_array = _array;
+        link_array = _array;
+        m_array = link_array;
         connect(ui->calc_button, SIGNAL(clicked(bool)), this, SLOT(calculation()));
     }
 
@@ -213,6 +214,8 @@ namespace M_W {
 
         spam_string = QString::number(calculation.get_wobbe_number_lower());
         ui->wobbe_number_lower->insert(spam_string);
+
+        m_array = link_array;
     }
 
 
